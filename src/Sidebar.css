@@ -1,0 +1,32 @@
+.sidebar {
+  background-color: #181f2e;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__top .MuiSvgIcon-root:nth-child(2) {
+  color: #e84646;
+}
+
+.sidebar__top > .MuiSvgIcon-root {
+  color: white;
+}
+
+.sidebar__bottom > .MuiSvgIcon-root {
+  color: white;
+}

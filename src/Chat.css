@@ -1,5 +1,4 @@
 .chat {
-  background-color: #808080;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -36,6 +35,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
+  border-top: 1px solid #d3d3d3;
 }
 
 .chat__input > form {

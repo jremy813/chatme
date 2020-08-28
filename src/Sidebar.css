@@ -29,9 +29,11 @@
 .sidebar__top > .MuiSvgIcon-root {
   color: white;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .sidebar__bottom > .MuiSvgIcon-root {
   color: white;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }

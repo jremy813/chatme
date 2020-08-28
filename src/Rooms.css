@@ -19,8 +19,18 @@
   padding: 0.5rem;
   width: 80%;
   border-radius: 15px;
+  align-items: center;
 }
 
 .rooms__input > input {
   border: none;
+  outline: none;
+}
+
+.rooms__input > .MuiSvgIcon-root {
+  color: #d2dde5;
+}
+
+.rooms__input > input::placeholder {
+  color: #97aec1;
 }

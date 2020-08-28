@@ -1,0 +1,26 @@
+.rooms {
+  flex: 0.2;
+  background-color: #ebf4fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.rooms__search {
+  display: grid;
+  place-items: center;
+
+  height: 100px;
+  background-color: #e2eef7;
+}
+
+.rooms__input {
+  display: flex;
+  background-color: white;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.rooms__input > input {
+  border: none;
+}

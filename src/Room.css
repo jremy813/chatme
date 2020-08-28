@@ -1,0 +1,12 @@
+.room {
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.room > p,
+h2 {
+  margin-left: 1rem;
+}

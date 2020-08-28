@@ -4,7 +4,7 @@ import "./Room.css";
 function Room() {
   return (
     <div className="room">
-      <h2>Room name</h2>
+      <h3>Room name</h3>
       <p>Latest chat....</p>
     </div>
   );

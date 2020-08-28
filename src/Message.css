@@ -1,0 +1,15 @@
+.message {
+  margin-left: 2rem;
+}
+
+.message > p {
+  background: #ebf4fb;
+  padding: 1rem;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.message > span {
+  font-size: xx-small;
+  margin-left: 1rem;
+}

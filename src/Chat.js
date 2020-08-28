@@ -5,6 +5,7 @@ import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
 import InsertEmoticonOutlinedIcon from "@material-ui/icons/InsertEmoticonOutlined";
 import AttachmentOutlinedIcon from "@material-ui/icons/AttachmentOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
+import Message from "./Message";
 
 function Chat() {
   return (
@@ -20,7 +21,7 @@ function Chat() {
         </div>
       </div>
       <div className="chat__chatBox">
-        <h1>hello</h1>
+        <Message />
       </div>
       <div className="chat__input">
         <InsertEmoticonOutlinedIcon />

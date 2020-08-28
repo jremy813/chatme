@@ -9,8 +9,10 @@
 .room > p,
 h3 {
   margin-left: 1rem;
+  color: #2f4757;
 }
 
 .room > p {
   margin-bottom: 2rem;
+  color: #758b9b;
 }

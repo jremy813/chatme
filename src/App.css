@@ -1,7 +1,10 @@
 .app {
-  display: flex;
 }
 
 .sidebar {
   flex: 0.1;
+}
+
+.app__body {
+  display: flex;
 }

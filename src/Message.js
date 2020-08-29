@@ -3,9 +3,11 @@ import "./Message.css";
 
 function Message() {
   return (
-    <div className="message">
-      <span>username</span>
-      <p>I sent a message</p>
+    <div className={`message ${true && "message__reciever2"}`}>
+      <div className={true && "message__reciever"}>
+        <span>username</span>
+        <p>I sent a message</p>
+      </div>
     </div>
   );
 }

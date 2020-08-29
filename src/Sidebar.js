@@ -7,12 +7,15 @@ import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined"
 import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
 import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
 import InputOutlinedIcon from "@material-ui/icons/InputOutlined";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <Avatar />
+        <Avatar src={user?.photoURL} />
 
         <MessageOutlinedIcon />
         <PhoneOutlinedIcon />

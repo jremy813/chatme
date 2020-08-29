@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Chat.css";
 import VideocamOutlinedIcon from "@material-ui/icons/VideocamOutlined";
 import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
@@ -6,13 +6,16 @@ import InsertEmoticonOutlinedIcon from "@material-ui/icons/InsertEmoticonOutline
 import AttachmentOutlinedIcon from "@material-ui/icons/AttachmentOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import Message from "./Message";
-
+import { useStateValue } from "./StateProvider";
+import db from "./firebase";
 function Chat() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="chat">
       <div className="chat__header">
         <div className="chat__headerLeft">
-          <h3>Display Name</h3>
+          <h3>{user.displayNAme}</h3>
           <p>Active now</p>
         </div>
         <div className="chat__headerRight">

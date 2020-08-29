@@ -1,10 +1,10 @@
 import React from "react";
 import "./Room.css";
 
-function Room() {
+function Room({ key, id, name }) {
   return (
     <div className="room">
-      <h3>Room name</h3>
+      <h3>{name}</h3>
       <p>Latest chat....</p>
     </div>
   );

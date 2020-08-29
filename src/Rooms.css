@@ -3,6 +3,16 @@
   background-color: #ebf4fb;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+  height: 100vh;
+}
+.rooms::-webkit-scrollbar {
+  display: none;
+}
+
+.rooms {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .rooms__search {
@@ -33,4 +43,25 @@
 
 .rooms__input > input::placeholder {
   color: #97aec1;
+}
+
+.rooms__createRoom > form > input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 15px;
+  margin-left: 4px;
+}
+
+.rooms__createRoom > form > input::placeholder {
+  color: #97aec1;
+}
+
+.rooms__createRoom > form > label {
+  color: #97aec1;
+}
+
+.rooms__createRoom > form > button {
+  display: none;
 }

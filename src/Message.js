@@ -10,13 +10,15 @@ function Message() {
   const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
-    db.collection("rooms")
-      .doc(roomId)
-      .collection("messages")
-      .orderBy("timestamp", "asc")
-      .onSnapshot((snapshot) =>
-        setMessages(snapshot.docs.map((doc) => doc.data()))
-      );
+    if (roomId) {
+      db.collection("rooms")
+        .doc(roomId)
+        .collection("messages")
+        .orderBy("timestamp", "asc")
+        .onSnapshot((snapshot) =>
+          setMessages(snapshot.docs.map((doc) => doc.data()))
+        );
+    }
   }, [roomId]);
 
   console.log(messages);

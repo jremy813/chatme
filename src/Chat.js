@@ -18,12 +18,13 @@ function Chat() {
 
   const sendMessage = (e) => {
     e.preventDefault();
-
-    db.collection("rooms").doc(roomId).collection("messages").add({
-      messages: input,
-      name: user.displayName,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
+    if (roomId) {
+      db.collection("rooms").doc(roomId).collection("messages").add({
+        messages: input,
+        name: user.displayName,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+    }
 
     setInput("");
   };

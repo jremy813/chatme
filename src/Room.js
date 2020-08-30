@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Room.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import db from "./firebase";
 
 function Room({ key, id, name }) {
   return (

@@ -65,3 +65,7 @@
 .rooms__createRoom > form > button {
   display: none;
 }
+
+a {
+  text-decoration: none;
+}

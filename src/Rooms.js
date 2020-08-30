@@ -9,7 +9,14 @@ function Rooms() {
   const [rooms, setRooms] = useState([]);
   const [input, setInput] = useState("");
 
+  const [roomName, setRoomName] = useState("");
   const { roomId } = useParams();
+
+  useEffect(() => {
+    db.collection("rooms").onSnapshot((snapshot) =>
+      setRooms(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
+    );
+  }, []);
 
   const createRoom = (e) => {
     e.preventDefault();
@@ -21,12 +28,6 @@ function Rooms() {
     }
     setInput("");
   };
-
-  useEffect(() => {
-    db.collection("rooms").onSnapshot((snapshot) =>
-      setRooms(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
-    );
-  }, []);
 
   return (
     <div className="rooms">

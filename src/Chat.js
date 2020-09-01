@@ -33,7 +33,7 @@ function Chat() {
     <div className="chat">
       <div className="chat__header">
         <div className="chat__headerLeft">
-          <h3>Display Name</h3>
+          <h3>{user.displayName}</h3>
           <p>Active now</p>
         </div>
         <div className="chat__headerRight">

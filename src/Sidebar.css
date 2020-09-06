@@ -37,3 +37,10 @@
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
+
+/* media q  */
+@media only screen and (max-width: 838px) {
+  .sidebar {
+    display: none;
+  }
+}

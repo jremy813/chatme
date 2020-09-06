@@ -1,15 +1,14 @@
 import firebase from "firebase";
 const firebaseConfig = {
-  apiKey: "AIzaSyBzuHXEaVhINCZIh2l-k85GLPUOJwOCUoQ",
-  authDomain: "chatme-81eda.firebaseapp.com",
-  databaseURL: "https://chatme-81eda.firebaseio.com",
-  projectId: "chatme-81eda",
-  storageBucket: "chatme-81eda.appspot.com",
-  messagingSenderId: "668039705973",
-  appId: "1:668039705973:web:717f44208cbef155148f3c",
-  measurementId: "G-73HXRFJCSL",
+  apiKey: "AIzaSyC8grVdT3NOwToK0u03Xmjzxx0wtmJth14",
+  authDomain: "chatme-6436c.firebaseapp.com",
+  databaseURL: "https://chatme-6436c.firebaseio.com",
+  projectId: "chatme-6436c",
+  storageBucket: "chatme-6436c.appspot.com",
+  messagingSenderId: "933499751721",
+  appId: "1:933499751721:web:85a1d84af03488f493bb38",
+  measurementId: "G-2ZT4G4P74Q",
 };
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();

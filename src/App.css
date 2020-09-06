@@ -1,10 +1,14 @@
-.app {
-}
-
 .sidebar {
   flex: 0.1;
 }
 
 .app__body {
   display: flex;
+}
+
+/* media q  */
+@media only screen and (max-width: 789px) {
+  .app__body {
+    display: block;
+  }
 }

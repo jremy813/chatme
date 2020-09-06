@@ -58,6 +58,13 @@
   color: #97aec1;
 }
 
+/* media q  */
+@media only screen and (max-width: 789px) {
+  .rooms {
+    height: 20vh;
+  }
+}
+
 .rooms__createRoom > form > label {
   color: #97aec1;
 }

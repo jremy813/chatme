@@ -7,7 +7,7 @@ import { useStateValue } from "./StateProvider";
 function Message() {
   const [messages, setMessages] = useState([]);
   const { roomId } = useParams();
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     if (roomId) {

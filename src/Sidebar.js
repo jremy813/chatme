@@ -10,7 +10,7 @@ import InputOutlinedIcon from "@material-ui/icons/InputOutlined";
 import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   return (
     <div className="sidebar">

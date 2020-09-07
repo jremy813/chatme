@@ -13,7 +13,7 @@ import firebase from "firebase";
 
 function Chat() {
   const [input, setInput] = useState("");
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const { roomId } = useParams();
 
   const sendMessage = (e) => {

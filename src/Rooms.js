@@ -3,14 +3,10 @@ import "./Rooms.css";
 import Room from "./Room.js";
 import SearchIcon from "@material-ui/icons/Search";
 import db from "./firebase";
-import { useParams } from "react-router-dom";
 
 function Rooms() {
   const [rooms, setRooms] = useState([]);
   const [input, setInput] = useState("");
-
-  const [roomName, setRoomName] = useState("");
-  const { roomId } = useParams();
 
   useEffect(() => {
     db.collection("rooms").onSnapshot((snapshot) =>
